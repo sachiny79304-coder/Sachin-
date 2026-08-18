@@ -1,0 +1,450 @@
+/* *{
+    padding: 0;
+    margin: 0;
+}
+.main {
+    background-image: url("image/sanju.jpg");
+    background-image: center center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    height: 100vh;
+    position: relative;
+    
+}
+body {
+    background-color: black;
+}
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    background-color: black;
+
+}
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+    
+
+}
+nav img {
+    color: red;
+    width: 85px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+}
+.herro{
+    font-family: 'martel Sans', sans-serif;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 5px;
+
+}
+button{
+    background-color: red;
+    interest-delay: calc(67);
+}
+.herro> :first-child {
+    font-weight: bolder;
+    font-size: 35px;
+
+}
+div> button:first-child{
+    background-color: darkgray;
+}
+body {
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+/* .top-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.language {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 10px;
+
+  color: white;
+}
+
+.language .icon {
+  margin-right: 5px;
+}
+
+.language select {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+}
+.language::after {
+  content: "▼";
+  font-size: 10px;
+  margin-left: 5px;
+  color: white;
+}
+
+.sign-in {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: #f6121d;
+} */
+ /* body {
+  background: #111;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+
+.language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.language .icon {
+  font-size: 14px;
+}
+
+.language .arrow {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+
+.sign-in {
+  height: 34px;
+  padding: 0 14px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sign-in:hover {
+  background-color: #f6121d;
+} */ 
+ /* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: black;
+  font-family: Arial, sans-serif;
+}
+
+/* MAIN */
+.main {
+  height: 100vh;
+  background: url("image/sanju.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+}
+
+/* NAVBAR */
+nav {
+  position: relative;
+  z-index: 2;
+  width: 90%;
+  margin: auto;
+  height: 8vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo {
+  width: 8vw;   /* scales with screen */
+  min-width: 80px;
+}
+
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+/* LANGUAGE */
+.language {
+  display: flex;
+  align-items: center;
+  gap: 0.4vw;
+  height: 4vh;
+  padding: 0 0.8vw;
+  border: 1px solid rgba(255,255,255,0.6);
+  border-radius: 4px;
+  color: white;
+  font-size: 0.9vw;
+  
+}
+
+.language select {
+  background: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  font-size: 0.9vw;
+}
+
+/* SIGN IN */
+.sign-in {
+  height: 4vh;
+  padding: 0 1vw;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9vw;
+  font-weight: 600;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 2;
+  height: calc(100% - 8vh);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+  gap: 1.2vh;
+  padding: 0 2vw;
+}
+
+/* TEXT — NOW SCALES PROPERLY */
+.hero h1 {
+  font-size: 3vw;   /* responsive */
+  font-weight: 700;
+  max-width: 50vw;
+}
+
+.hero h3 {
+  font-size: 1.2vw;
+}
+
+.hero p {
+  font-size: 1vw;
+}
+
+/* INPUT + BUTTON */
+.hero-box {
+  display: flex;
+  gap: 0.8vw;
+  margin-top: 1vh;
+}
+
+.hero-box input {
+  width: 20vw;
+  padding: 0.8vw;
+  font-size: 1vw;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(0,0,0,0.6);
+  color: white;
+}
+
+.hero-box button {
+  padding: 0.8vw 1.5vw;
+  font-size: 1vw;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.container {
+  padding: 15px;
+}
+
+
+
+
+
+.container {
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 15px;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+  
+}
+
+.card {
+  position: relative;
+  min-width: 165px;
+  height: 170px;
+  flex-shrink: 0;
+  row-gap: 0px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  
+
+}
+
+.card span {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  left: 5px;
+  font-size: 45px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  height: 60;
+  
+
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 25%;
+  background: rgba(0,0,0,0.6);border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 10;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+.card img {
+  position: absolute;
+  margin: 0;
+  display: flex;
+
+}
+
+
+
+
+
+section{
+    background:#000;
+    color:white;
+    padding:40px;
+}
+
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow:0 20px 40px rgba(255,0,120,0.25);
+}
+
+.card h2{
+    font-size:20px;
+    margin-bottom:10px;
+    
+}
+
+.card p{
+    font-size:14px;
+    opacity:0.8;
+    line-height:1.5;
+}
+
+.icon{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    font-size:38px;
+    opacity:0.9;
+}
+
+@media(max-width:600px){
+    h1{
+        font-size:24px;
+    }
+}
